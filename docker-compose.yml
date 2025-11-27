@@ -9,7 +9,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./notebooks:/workspace/notebooks
+      - .:/workspace # This mounts everything including notebooks
     environment:
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
     stdin_open: true
